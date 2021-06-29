@@ -1,0 +1,16 @@
+{
+    "name": "hypixelchat",
+    "author": "Antonio32A",
+    "license": "MIT",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "cd src && node .",
+        "tunnel": "cloudflared tunnel --url http://localhost:8936"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "mineflayer": "^3.7.0",
+        "socket.io": "^4.1.2"
+    }
+}
