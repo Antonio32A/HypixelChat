@@ -21,6 +21,11 @@ dependencies {
 
 	implementation "io.socket:socket.io-client:2.0.1"
 	include "io.socket:socket.io-client:2.0.1"
+	include "io.socket:engine.io-client:2.0.0"
+	include "org.json:json:20090211"
+	include "com.squareup.okhttp3:okhttp:3.12.12"
+	include "com.squareup.okhttp3:okhttp:3.12.12"
+	include "com.squareup.okio:okio:1.15.0"
 }
 
 processResources {
