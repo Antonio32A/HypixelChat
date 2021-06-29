@@ -16,6 +16,10 @@ public class SocketHandler {
         socket = setupSocket();
     }
 
+    public void sendChatMessage(String message) {
+        socket.emit("chat", message);
+    }
+
     public Socket setupSocket() {
         URI uri = URI.create("http://localhost:8936/");
         Socket socket = IO.socket(uri);

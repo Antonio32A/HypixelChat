@@ -12,7 +12,7 @@ public abstract class ClientPlayerEntityMixin {
 	@Inject(at = @At("HEAD"), method = "sendChatMessage", cancellable = true)
 	private void sendChatMessage(String message, CallbackInfo ci) {
 		if (message.startsWith("hy ")) {
-			HypixelChat.getInstance().socketHandler.socket.emit("chat", message.substring(3));
+			HypixelChat.getInstance().socketHandler.sendChatMessage(message.substring(3));
 			ci.cancel();
 		}
 	}
