@@ -3,9 +3,7 @@ package com.antonio32a.hypixelchat.handlers;
 import io.socket.client.IO;
 import io.socket.client.Socket;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.network.MessageType;
 import net.minecraft.text.LiteralText;
-import net.minecraft.util.Util;
 
 import java.net.URI;
 
