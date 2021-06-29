@@ -38,10 +38,10 @@ public abstract class ChatScreenMixin extends Screen {
 
             // this is extremely, extremely scuffed, but it's currently 1am
             // TODO fix this
-            drawVerticalLine(matrices, width - a, height - a, b - 1, 0x99FFFF55);
-            drawVerticalLine(matrices, 1, height - a, b - 1, 0x99FFFF55);
-            drawHorizontalLine(matrices, a - 1, c, b - 1, 0x99FFFF55);
-            drawHorizontalLine(matrices, a - 1, c, height - a, 0x99FFFF55);
+            drawVerticalLine(matrices, width - a, height - a, b - 1, 0x9955FFFF);
+            drawVerticalLine(matrices, 1, height - a, b - 1, 0x9955FFFF);
+            drawHorizontalLine(matrices, a - 1, c, b - 1, 0x9955FFFF);
+            drawHorizontalLine(matrices, a - 1, c, height - a, 0x9955FFFF);
         }
     }
 
