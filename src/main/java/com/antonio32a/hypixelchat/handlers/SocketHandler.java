@@ -26,20 +26,18 @@ public class SocketHandler {
 
         socket.connect();
         socket.on("alert", args -> {
-            if (MinecraftClient.getInstance().inGameHud != null)
-                MinecraftClient.getInstance().inGameHud.addChatMessage(
-                    MessageType.CHAT,
+            if (MinecraftClient.getInstance().player != null)
+                MinecraftClient.getInstance().player.sendMessage(
                     new LiteralText("§a§lHypixelChat §r§b> §d" + args[0]),
-                    Util.NIL_UUID
+                    false
                 );
         });
 
         socket.on("chat", args -> {
-            if (MinecraftClient.getInstance().inGameHud != null)
-                MinecraftClient.getInstance().inGameHud.addChatMessage(
-                    MessageType.CHAT,
+            if (MinecraftClient.getInstance().player != null)
+                MinecraftClient.getInstance().player.sendMessage(
                     new LiteralText((String) args[0]),
-                    Util.NIL_UUID
+                    false
                 );
         });
         return socket;
