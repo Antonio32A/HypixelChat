@@ -1,0 +1,33 @@
+{
+    "schemaVersion": 1,
+    "id": "hypixelchat",
+    "version": "${version}",
+    "name": "HypixelChat",
+    "description": "1.17 Fabric mod and mineflayer script which allows you to chat on Hypixel while you're on any Minecraft server. ",
+    "authors": [
+        "Antonio32A"
+    ],
+    "contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+    "license": "MIT",
+    "icon": "assets/hypixelchat/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.antonio32a.hypixelchat.HypixelChat"
+        ]
+    },
+    "mixins": [
+        "hypixelchat.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.11.3",
+        "minecraft": "1.17.x",
+        "java": ">=16"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}
